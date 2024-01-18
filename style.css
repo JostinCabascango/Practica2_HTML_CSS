@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    border: 3px solid red;
+}
+
+nav {
+    border: 3px solid blue;
+}
+
+menu ul {
+        overflow: hidden;
+        background-color: #333;
+        height: auto;
+      
+}
+li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li {
+    float: right;
+    list-style-type: none;
+    border: 1px solid rebeccapurple;
+    margin-left: 20px;
+}
+
+.hero-image {
+    padding: 1rem;
+    background-image: url('hhttps://mir-s3-cdn-cf.behance.net/project_modules/disp/94380629090891.55e19f6bb6424.jpg');
+    height: 50vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: white;
+}
+/*200*300/*
