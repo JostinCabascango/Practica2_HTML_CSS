@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-header {
-    border: 3px solid red;
-}
-
 nav {
     position: fixed;
     width: 100%;
@@ -69,18 +65,17 @@ nav {
 
 footer {
     background-color: black;
-    padding: 20px 0; 
+    padding: 20px 0;
     color: white;
 }
 
 footer p {
-    text-align: center; 
-    margin: 0; 
-    font-size: 1.2em; 
-    line-height: 1.6; 
+    text-align: center;
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.6;
 }
 
 footer i {
     margin-right: 10px;
 }
-
