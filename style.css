@@ -1,81 +1,249 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: #000000;
-    z-index: 1;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    Width: 100vw;
+    height: 100vh;
+
 }
 
-.menu li {
+/*----------------------------- Menu ------------------------------------------*/
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: black;
+    width: 100vw;
+    height: auto;
+}
+
+#navbar ul li {
     float: right;
-    list-style-type: none;
+    color: white;
+    margin-right: 3rem;
+    list-style: none;
+    padding: 1.5rem
+}
+
+#navbar ul li:hover {
+    background-color: #8e8a8a;
+}
+
+/* <------------------HERO IMAGE --------------------------> */
+#banner {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#banner h1, #banner p {
+    position: absolute;
+    color: #fff;
+}
+
+#banner h1 {
+    top: 20%;
+    left: 10%;
+}
+
+#banner p {
+    top: 30%;
+    left: 10%;
+}
+
+/* -----------------------------------------Sobre nosotros ------------------------------------------------*/
+#about-us {
+    margin-top: 5vh;
+}
+
+#about-us h2 {
+    margin-top: 2rem;
+    margin-left: 10vw;
+}
+
+.imgLeft {
+    float: left;
+    border-radius: 20%;
+
+}
+
+.imgRight {
+    float: right;
+    border-radius: 20%;
+
+}
+
+.about-images {
+    margin-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+
+}
+
+/* ------------------------------------------------------Carta-------------------------------------------- */
+.header {
+    grid-area: header;
+}
+
+.header h1 {
+    background-color: #0a175a;
+    color: white;
+}
+
+.menu {
+    grid-area: menu;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.contenido h2 {
+    text-align: start;
     margin-left: 1rem;
 }
 
-.menu li a {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 15px;
+.img1 {
+    grid-area: img1;
 }
 
-.menu li a:hover {
-    background-color: #dddddd;
+.img2 {
+    grid-area: img2;
 }
 
-.hero-image {
-    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/94380629090891.55e19f6bb6424.jpg');
-    height: 50vh;
-    width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr;
+    grid-auto-flow: row;
+    gap: 1rem;
+    grid-template-areas:
+                "header header header"
+                "menu contenido contenido"
+                "menu img1 img2";
+    background-color: #ffffff;
 }
 
-.hero-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 20vw;
-    transform: translate(-50%, -50%);
-    color: white;
+.grid-container > div {
+    background-color: rgb(255, 255, 255);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    font-size: 1rem;
 }
 
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#menu {
+    width: 80%;
+    margin: auto;
+}
+
+#menu h2 {
+    margin-top: 1vh;
+
+}
+
+/* ----------------------------------------Galería------------------------------------------------- */
+#gallery h2 {
+    margin-left: 10vw;
+    margin-top: 1vh;
+}
+
+/* Galería de fotos */
+#gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 81%;
+}
+
+#gallery-images img {
+    width: 21%;
+    height: auto;
+    margin: 1%;
+    border: 1px solid #fff;
+    filter: brightness(1);
+
+}
+
+#gallery-images img:hover {
+    border: 0.2rem solid #63a0ef;
+    filter: brightness(0.7);
+}
+
+#gallery-images img:nth-child(1),
+#gallery-images img:nth-child(4),
+#gallery-images img:nth-child(5),
+#gallery-images img:nth-child(8) {
+    filter: brightness(0.7);
+}
+
+/* ----------------------------------------FOOTER------------------------------------------------- */
 footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: black;
-    padding: 20px 0;
-    color: white;
+    display: flex;
+    margin-top: 1rem;
 }
 
 footer p {
-    text-align: center;
-    margin: 0;
-    font-size: 1.2em;
-    line-height: 1.6;
+    color: white;
 }
 
-footer i {
-    margin-right: 10px;
+
+.section {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section:nth-child(-n+2) {
+    flex: 0 0 17%;
+}
+
+
+.section:last-child {
+    flex: 0 0 115%;
+}
+
+footer .section i {
+    margin-right: 1vw;
+}
+
+/* Media query para pantallas de tamaño medio (tablets, 768px y más) */
+@media only screen and (min-width: 768px) {
+    .section {
+        flex: 1;
+    }
+}
+
+/* Media query para pantallas grandes (desktops, 992px y más) */
+@media only screen and (min-width: 992px) {
+    .section {
+        flex: 1;
+    }
 }

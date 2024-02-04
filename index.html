@@ -1,81 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Restaurant els coberts</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <!--Menu -->
-            <ul class="menu">
-                <li><a href="#">Nosaltres</a></li>
-                <li><a href="#">Carta</a></li>
-                <li><a href="#">Galeria</a></li>
-            </ul>
-        </nav>
-        <!--Hero Image-->
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1>Bienvenido a nuestro <b>restaurante!</b></h1>
-                <p>Ofrecemos una amplia variedad de platos típicos y del
+
+<header>
+    <!--Maquetar con float-->
+    <div id="navbar">
+        <ul>
+            <li>Nosaltres</li>
+            <li>Carta</li>
+            <li>Galeria</li>
+        </ul>
+    </div>
+    <!--Maquetar con flex o grid que sea responsive-->
+
+    <div id="banner">
+        <img src="img/banner.jpg" alt="Banner image">
+        <h1>Restaurant els coberts</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+    </div>
+</header>
+<main>
+    <!--Maquetar con float : -->
+    <section id="about-us">
+        <h2>Sobre nosaltres</h2>
+        <div class="about-images">
+            <p><img class="imgLeft" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple"
+                    style="width:170px;height:170px;margin-right:15px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                nisi
+                lorem
+                egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue
+                eget,
+                auctor
+                vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+                lobortis
+                in
+                odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+                ullamcorper
+                ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                tellus
+                gravida
+                venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac
+                leo
+                purus.
+                Mauris quis diam velit.</p>
+        </div>
+        <div class="about-images">
+
+            <p><img class="imgRight" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple"
+                    style="width:170px;height:170px;margin-right:15px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                nisi
+                lorem
+                egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue
+                eget,
+                auctor
+                vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+                lobortis
+                in
+                odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+                ullamcorper
+                ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                tellus
+                gravida
+                venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac
+                leo
+                purus.
+                Mauris quis diam velit.</p>
+
+        </div>
+    </section>
+    <!--Maquetar con grid que sea responsive-->
+    <section id="menu">
+        <h2>Carta</h2>
+        <div class="grid-container">
+            <div class="header">
+                <h1>Menu</h1>
+            </div>
+            <div class="menu">
+                <!-- Tiene que estar centrado  -->
+                <h2>Menú 1</h2>
+            </div>
+            <div class="contenido">
+                <!-- Tiene que estar al principio de la quadricula solamente el h2 -->
+                <h2>Contenido</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur.</p>
+            </div>
+            <div class="img1">
+                <img src="img/dish1.jpg" alt="Imagen del menú 1">
+            </div>
+            <div class="img2">
+                <img src="img/dish2.jpg" alt="Imagen del menú 2">
             </div>
         </div>
-
-    </header>
-
-    <main>
-        <!--About us-->
-        <div class="aboutus">
-            <!--Descripcion 1-->
-            <h2>Sobre nosaltres</h2>
-            <p><img src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple"
-                    style="width:170px;height:170px;margin-left:15px;">Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
-                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
-                congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis
-                sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
-                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-                fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
-            </p>
-            <img src="" alt="">
-            <!--Descripcion 2-->
-            <p><img src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple"
-                    style="width:170px;height:170px;margin-left:15px;">VLorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
-                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
-                congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis
-                sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
-                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
-                fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
-
-
-            </p>
-            <img src="" alt="">
+        <div class="grid-container">
+            <div class="menu">
+                <!-- Tiene que estar centrado  -->
+                <h2>Menú 2</h2>
+            </div>
+            <div class="contenido">
+                <!-- Tiene que estar al principio de la quadricula solamente el h2 -->
+                <h2>Contenido</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur.</p>
+            </div>
+            <div class="img1">
+                <img src="img/dish1.jpg" alt="Imagen del menú 3">
+            </div>
+            <div class="img2">
+                <img src="img/dish2.jpg" alt="Imagen del menú 4">
+            </div>
         </div>
-        <!--Carta-->
+    </section>
+    <!--Maquetar con flex que sea responsive-->
+    <section id="gallery">
+        <h2>Galeria d'imatges</h2>
+        <div id="gallery-images">
+            <img src="img/galeriaImg.jpg" alt="galeriaImg">
+            <img src="img/galeriaImg.jpg" alt="img/galeriaImg.jpgnail ">
+            <img src="img/galeriaImg.jpg" alt="img/galeriaImg.jpgnail ">
+            <img src="img/galeriaImg.jpg" alt="img/galeriaImg.jpgnail ">
+            <img src="img/galeriaImg.jpg" alt="img/galeriaImg.jpgnail ">
+            <img src="img/galeriaImg.jpg" alt="img/galeriaImg.jpgnail ">
+            <img src="img/galeriaImg.jpg" alt="img/galeriaImg.jpgnail ">
+            <img src="img/galeriaImg.jpg" alt="img/galeriaImg.jpgnail ">
 
-    </main>
-
-    <!--Footer-->
-    <footer>
-        <!--Correo Electronico-->
-        <p><i class="fa-solid fa-envelope"></i>example@example.com</p>
-        <!--Numero Telefono-->
-        <p>999 999 99 99 <i class="fa-solid fa-phone"></i></p>
-        <!--Nombre Restaurante-->
-        <p>Restaurante los cubiertos</p>
-    </footer>
-
+        </div>
+    </section>
+</main>
+<footer>
+    <!-- Sección de email -->
+    <div class="section">
+        <i class="fas fa-envelope" style="color: white;"></i>
+        <p>example@example.com</p>
+    </div>
+    <!-- Sección de teléfono -->
+    <div class="section">
+        <i class="fas fa-phone" style="color: white;"></i>
+        <p>999999999</p>
+    </div>
+    <!-- Sección de nombre del restaurante -->
+    <div class="section">
+        <p>Restaurant Els Coberts</p>
+    </div>
+</footer>
 </body>
-
 </html>
