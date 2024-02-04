@@ -76,12 +76,15 @@ body {
 .imgLeft {
     float: left;
     border-radius: 20%;
-
+    width: 170px;
+    height: 170px;
 }
 
 .imgRight {
     float: right;
     border-radius: 20%;
+    width: 170px;
+    height: 170px;
 
 }
 
@@ -130,8 +133,8 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.5fr 1fr;
+    grid-template-columns: 0.1fr 0.3fr 0.3fr;
+    grid-template-rows: 0.1fr 0.2fr 0.1fr;
     grid-auto-flow: row;
     gap: 1rem;
     grid-template-areas:
@@ -245,5 +248,73 @@ footer .section i {
 @media only screen and (min-width: 992px) {
     .section {
         flex: 1;
+    }
+}
+
+/* Establecer un punto de interrupción a 800px */
+@media only screen and (max-width: 800px) {
+    .about-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-images img {
+        margin-bottom: 2rem;
+    }
+
+    .imgLeft, .imgRight {
+        float: none;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .grid-container {
+        grid-template-areas:
+            "header header"
+            "menu contenido"
+            "menu img1"
+            "menu img2";
+    }
+
+
+    .grid-container img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+
+
+    #gallery-images img {
+        flex-basis: 42%;
+    }
+}
+
+/* Establecer un punto de interrupción a 600px */
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    section {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #gallery-images img {
+        flex-basis: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "menu"
+            "contenido"
+            "img1"
+            "img2";
     }
 }
